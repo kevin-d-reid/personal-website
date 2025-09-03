@@ -2,7 +2,8 @@
 title: "Draft test article 2"
 description: "Testing draft article functionality"
 author: "Kevin D Reid"
-dateUploaded: 2025-09-02T15:45:00-07:00
+date:
+  uploaded: 2025-09-02T15:45:00-07:00
 image:
   url: ""
   alt: ""

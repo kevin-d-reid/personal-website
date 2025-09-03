@@ -7,8 +7,10 @@ const blogposts = defineCollection({
       title: z.string(),
       description: z.string(),
       author: z.string(),
-      dateUploaded: z.date(),
-      dateModified: z.date().optional(),
+      date: z.object({
+        uploaded: z.date(),
+        modified: z.date().optional(),
+      }),
       image: z.object({
         url: z.string(),
         alt: z.string()
