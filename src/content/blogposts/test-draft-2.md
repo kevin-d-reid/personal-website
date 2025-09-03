@@ -4,6 +4,7 @@ description: "Testing draft article functionality"
 author: "Kevin D Reid"
 date:
   uploaded: 2025-09-02T15:45:00-07:00
+  modified: 2025-09-02T15:45:00-07:00
 image:
   url: ""
   alt: ""

@@ -4,7 +4,7 @@ const { frontmatter } = Astro.props;
 ---
 <BaseLayout pageTitle={frontmatter.title}>
   <p>Published: {frontmatter.date.uploaded.toLocaleString("en-US", {dateStyle:"full",timeStyle:"short"})}</p>
-  {frontmatter.date.modified && <p>Updated: {frontmatter.date.modified.toLocaleString("en-US", {dateStyle:"full",timeStyle:"short"})}</p>}
+  {(frontmatter.date.modified > frontmatter.date.uploaded) && <p>Updated: {frontmatter.date.modified.toLocaleString("en-US", {dateStyle:"full",timeStyle:"short"})}</p>}
   <p><em>{frontmatter.description}</em></p>
   <p>Written by {frontmatter.author}</p>
   <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt}>

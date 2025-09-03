@@ -9,7 +9,10 @@ const blogposts = defineCollection({
       author: z.string(),
       date: z.object({
         uploaded: z.date(),
-        modified: z.date().optional(),
+        modified: z.date(),
+      }).refine((data) => data.modified >= data.uploaded, {
+        message: "Modified date cannot be earlier than upload date.",
+        path: ["modified"]
       }),
       image: z.object({
         url: z.string(),
