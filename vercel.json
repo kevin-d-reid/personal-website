@@ -5,6 +5,10 @@
       "source": "/(.*)",
       "headers": [
         {
+          "key": "Content-Security-Policy",
+          "value": "frame-ancestors 'none'; upgrade-insecure-requests; default-src 'none'; style-src 'self'; font-src 'self'; img-src 'self'; script-src 'self'; require-trusted-types-for 'script'; trusted-types 'none'; base-uri 'none'; form-action 'none'; report-uri https://xegq7u5s.uriports.com/reports/enforce; report-to default"
+        },
+        {
           "key": "Content-Type",
           "value": "text/html; charset=UTF-8"
         },
@@ -14,23 +18,35 @@
         },
         {
           "key": "Cross-Origin-Embedder-Policy",
-          "value": "require-corp"
+          "value": "require-corp; report-to=\"default\""
         },
         {
           "key": "Cross-Origin-Opener-Policy",
-          "value": "same-origin"
+          "value": "same-origin; report-to=\"default\""
         },
         {
           "key": "Cross-Origin-Resource-Policy",
           "value": "same-origin"
         },
         {
+          "key": "NEL",
+          "value": "{\"report_to\":\"default\",\"max_age\":31536000,\"include_subdomains\":true,\"failure_fraction\":1.0}"
+        },
+        {
           "key": "Permissions-Policy",
-          "value": "accelerometer=(), autoplay=(), camera=(), geolocation=(), gyroscope=(), microphone=(), payment=(), usb=()"
+          "value": "accelerometer=();report-to=default, autoplay=();report-to=default, camera=();report-to=default, geolocation=();report-to=default, gyroscope=();report-to=default, microphone=();report-to=default, payment=();report-to=default, usb=();report-to=default"
         },
         {
           "key": "Referrer-Policy",
           "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Report-To",
+          "value": "{\"group\":\"default\",\"max_age\":31536000,\"endpoints\":[{\"url\":\"https://xegq7u5s.uriports.com/reports\"}],\"include_subdomains\":true}"
+        },
+        {
+          "key": "Reporting-Endpoints",
+          "value": "default=\"https://xegq7u5s.uriports.com/reports\""
         },
         {
           "key": "Strict-Transport-Security",
