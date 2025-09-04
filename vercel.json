@@ -87,6 +87,33 @@
           "value": "text/xml; charset=UTF-8"
         }
       ]
+    },
+    {
+      "source": "/(.+).css",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/css; charset=UTF-8"
+        }
+      ]
+    },
+    {
+      "source": "/(.+).js",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/javascript"
+        }
+      ]
+    },
+    {
+      "source": "/(.+).svg",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "image/svg+xml"
+        }
+      ]
     }
   ],
   "trailingSlash": false

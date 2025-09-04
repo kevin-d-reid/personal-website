@@ -9,7 +9,7 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title><xsl:value-of select="/rss/channel/title"/></title>
-		<link rel="stylesheet" href="./water.min.css" />
+		<link rel="stylesheet" type="text/css" href="./water.min.css" />
 	</head>
 	<body>
 		<h1>
@@ -58,7 +58,7 @@
 		<p><xsl:value-of select="count(/rss/channel/item)"/> news items.</p>
 		<p><small>Powered by <a href="https://www.rss.style/"><img alt="RSS.Style" referrerpolicy="origin" src="./rss-tile.svg" style="height:1em;padding-right:0.25em;vertical-align:middle;" />RSS.Style</a></small></p>
 		<script src="./clipboard.min.js"></script>
-		<script>
+		<script type="text/javascript">
 			new ClipboardJS('.clipboard');
 		</script>
 	</body>
