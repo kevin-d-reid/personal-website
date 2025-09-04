@@ -10,8 +10,7 @@ export default defineConfig({
   },
   server: {
     headers: {
-      "Content-Security-Policy-Report-Only": "frame-ancestors 'none'; default-src 'none'; font-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'; require-trusted-types-for 'script'; trusted-types 'none'; base-uri 'none'; form-action 'none'",
-      "Content-Type": "text/html; charset=UTF-8",
+      "Content-Security-Policy-Report-Only": "frame-ancestors 'none'; default-src 'none'; font-src 'self'; img-src 'self'; style-src 'self' 'unsafe-hashes' 'sha256-4Su6mBWzEIFnH4pAGMOuaeBrstwJN4Z3pq/s1Kn4/KQ='; script-src 'self'; require-trusted-types-for 'script'; trusted-types 'none'; base-uri 'none'; form-action 'none'",
       "Cross-Origin-Embedder-Policy-Report-Only": "require-corp",
       "Cross-Origin-Opener-Policy-Report-Only": "same-origin",
       "Cross-Origin-Resource-Policy": "same-origin",
