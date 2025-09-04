@@ -17,7 +17,6 @@ export async function GET (context) {
     xmlns: {
       atom: "http://www.w3.org/2005/Atom"
     },
-    stylesheet: `${context.site}assets/simple-rss.xslt`,
     trailingSlash: false
   });
 }
