@@ -1,6 +1,5 @@
 // @ts-check
 import { defineConfig } from "astro/config";
-import vercel from "@astrojs/vercel";
 
 // https://astro.build/config
 export default defineConfig({
@@ -10,7 +9,7 @@ export default defineConfig({
   },
   server: {
     headers: {
-      "Content-Security-Policy-Report-Only": "frame-ancestors 'none'; default-src 'none'; font-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'; require-trusted-types-for 'script'; trusted-types 'none'; connect-src 'self'; base-uri 'none'; form-action 'none'",
+      "Content-Security-Policy-Report-Only": "frame-ancestors 'none'; default-src 'none'; font-src 'self'; img-src 'self'; style-src 'report-sample' 'self'; script-src 'strict-dynamic'; require-trusted-types-for 'script'; trusted-types 'none'; connect-src 'self'; base-uri 'none'; form-action 'none'",
       "Cross-Origin-Embedder-Policy-Report-Only": "require-corp",
       "Cross-Origin-Opener-Policy-Report-Only": "same-origin",
       "Cross-Origin-Resource-Policy": "same-origin",
@@ -21,6 +20,5 @@ export default defineConfig({
       "X-XSS-Protection": "0"
     }
   },
-  trailingSlash: "never",
-  adapter: vercel()
+  trailingSlash: "never"
 });
