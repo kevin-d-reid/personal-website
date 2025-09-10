@@ -13,7 +13,7 @@ export default defineConfig({
       "Cross-Origin-Embedder-Policy-Report-Only": "require-corp",
       "Cross-Origin-Opener-Policy-Report-Only": "same-origin",
       "Cross-Origin-Resource-Policy": "same-origin",
-      "Permissions-Policy-Report-Only": "accelerometer=(), autoplay=(), camera=(), encrypted-media=(), geolocation=(), gyroscope=(), interest-cohort=(), microphone=(), midi=(), payment=(), picture-in-picture=(), serial=(), usb=()",
+      "Permissions-Policy-Report-Only": "accelerometer=(), autoplay=(), camera=(), encrypted-media=(), geolocation=(), gyroscope=(), microphone=(), midi=(), payment=(), picture-in-picture=(), serial=(), usb=()",
       "Referrer-Policy": "strict-origin-when-cross-origin",
       "X-Content-Type-Options": "nosniff",
       "X-Frame-Options": "DENY",
