@@ -1,2 +1,7 @@
 ---
+const yearFrom = "2025";
+const yearCurrent = new Date().getFullYear().toString();
 ---
+<footer>
+  <p>Copyright &copy; {yearFrom === yearCurrent ? yearCurrent : yearFrom+"-"+yearCurrent} Kevin D Reid. All Rights Reserved.</p>
+</footer>
