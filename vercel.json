@@ -1,5 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "regions": ["pdx1"],
   "headers": [
     {
       "source": "/(.*)",
@@ -92,7 +93,7 @@
         },
         {
           "key": "Content-Type",
-          "value": "text/xml; charset=UTF-8"
+          "value": "application/xml; charset=UTF-8"
         }
       ]
     }
