@@ -1,9 +1,11 @@
 // @ts-check
 import { defineConfig } from "astro/config";
+import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://www.kevindreid.com",
+  site: "https://kevindreid.ca",
+  trailingSlash: "never",
   devToolbar: {
     enabled: false
   },
@@ -20,5 +22,20 @@ export default defineConfig({
       "X-XSS-Protection": "0"
     }
   },
-  trailingSlash: "never"
+  integrations: [
+    sitemap({
+      namespaces: {
+        news: false,
+        xhtml: false,
+        image: false,
+        video: false
+      },
+      serialize(item) {
+        if (/drafts/.test(item.url)) {
+          return undefined;
+        }
+        return item;
+      }
+    })
+  ]
 });
