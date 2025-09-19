@@ -1,7 +1,6 @@
 ---
-const yearFrom = "2025";
-const yearCurrent = new Date().getFullYear().toString();
+import { copyright } from "@scripts/copyright"
 ---
 <footer>
-  <p><small>Copyright &copy; {yearFrom === yearCurrent ? yearCurrent : yearFrom+"-"+yearCurrent} Kevin D Reid. All Rights Reserved.</small></p>
+  <p><small>{copyright()}</small></p>
 </footer>
