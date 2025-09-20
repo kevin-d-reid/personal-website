@@ -1,7 +1,7 @@
-const yearStart = <Number>2025;
-const yearCurrent = <Number>new Date().getFullYear();
-const copyrightString = <String>"Copyright \xA9  Kevin D Reid. All Rights Reserved.";
 export function copyright() {
+  const yearStart = <Number>2025;
+  const yearCurrent = <Number>new Date().getFullYear();
+  const copyrightString = <String>"Copyright \xA9  Kevin D Reid. All Rights Reserved.";
   if (yearStart > yearCurrent) {
     throw new RangeError("\ncopyright.ts: start year cannot be greater than current year.");
   } else if (yearStart === yearCurrent) {
