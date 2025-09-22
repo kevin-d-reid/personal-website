@@ -1,6 +1,5 @@
 ---
 import PageHeader from "@components/PageHeader.astro";
-import Navigation from "@components/Navigation.astro";
 import PageFooter from "@components/PageFooter.astro";
 import "@styles/global.css";
 const { pageTitle } = Astro.props;
@@ -15,7 +14,6 @@ const { pageTitle } = Astro.props;
   </head>
   <body>
     <PageHeader />
-    <Navigation />
     <main>
       <h1>{pageTitle}</h1>
       <slot />
