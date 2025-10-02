@@ -19,3 +19,5 @@ Designed with security and performance in mind
 1. A+ ranking on securityheaders.com
 2. A+ ranking on Qualys SSL test
 3. All sections green on hardenize.com
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0913ef4e-8db8-4c72-b27c-21d17698a6fb/deploy-status)](https://app.netlify.com/projects/kdr-personal-website/deploys)
