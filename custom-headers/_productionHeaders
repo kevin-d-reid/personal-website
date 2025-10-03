@@ -7,7 +7,7 @@
   Cross-Origin-Resource-Policy: same-origin
   NEL: {"report_to":"default","max_age":31536000,"include_subdomains":true,"failure_fraction":1.0}
   Permissions-Policy: accelerometer=();report-to=default, autoplay=();report-to=default, camera=();report-to=default, encrypted-media=();report-to=default, geolocation=();report-to=default, gyroscope=();report-to=default, microphone=();report-to=default, midi=();report-to=default, payment=();report-to=default, picture-in-picture=();report-to=default, serial=();report-to=default, usb=();report-to=default
-  Referred-Policy: strict-origin-when-cross-origin
+  Referrer-Policy: strict-origin-when-cross-origin
   Report-To: {"group":"default","max_age":31536000,"endpoints":[{"url":"https://xegq7u5s.uriports.com/reports"}],"include_subdomains":true}
   Reporting-Endpoints: default="https://xegq7u5s.uriports.com/reports"
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
