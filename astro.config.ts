@@ -8,6 +8,9 @@ export default defineConfig({
   devToolbar: {
     enabled: false
   },
+  build: {
+    format: "file"
+  },
   server: {
     headers: {
       "Content-Security-Policy-Report-Only": "frame-ancestors 'none'; default-src 'none'; font-src 'self'; img-src 'self'; style-src 'report-sample' 'self'; script-src 'report-sample' 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'",
