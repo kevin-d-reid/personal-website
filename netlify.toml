@@ -15,3 +15,6 @@
   to = "https://kevindreid.ca/:splat"
   status = 301
   force = true
+
+[context.production]
+  command = "npm run build && cp ./custom-headers/_productionHeaders ./dist/_headers"

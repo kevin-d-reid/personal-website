@@ -1,0 +1,25 @@
+/*
+  Content-Security-Policy: upgrade-insecure-requests; frame-ancestors 'none'; default-src 'none'; font-src 'self'; img-src 'self'; style-src 'report-sample' 'self'; script-src 'report-sample' 'self'; base-uri 'none'; form-action 'none'; report-uri https://xegq7u5s.uriports.com/reports/enforce; report-to default
+  Content-Type: text/html; charset=UTF-8
+  Content-Usage: train-ai=n
+  Cross-Origin-Embedder-Policy: require-corp; report-to="default"
+  Cross-Origin-Opener-Policy: same-origin; report-to="default"
+  Cross-Origin-Resource-Policy: same-origin
+  NEL: {"report_to":"default","max_age":31536000,"include_subdomains":true,"failure_fraction":1.0}
+  Permissions-Policy: accelerometer=();report-to=default, autoplay=();report-to=default, camera=();report-to=default, encrypted-media=();report-to=default, geolocation=();report-to=default, gyroscope=();report-to=default, microphone=();report-to=default, midi=();report-to=default, payment=();report-to=default, picture-in-picture=();report-to=default, serial=();report-to=default, usb=();report-to=default
+  Referred-Policy: strict-origin-when-cross-origin
+  Report-To: {"group":"default","max_age":31536000,"endpoints":[{"url":"https://xegq7u5s.uriports.com/reports"}],"include_subdomains":true}
+  Reporting-Endpoints: default="https://xegq7u5s.uriports.com/reports"
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  Vary: Accept-Encoding
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  X-XSS-Protection: 0
+
+/*.txt
+  Content-Security-Policy: upgrade-insecure-requests; frame-ancestors 'none'; default-src 'none'; img-src 'self'; style-src 'report-sample' 'sha256-4Su6mBWzEIFnH4pAGMOuaeBrstwJN4Z3pq/s1Kn4/KQ=' 'unsafe-hashes'; base-uri 'none'; form-action 'none'
+  Content-Type: text/plain; charset=UTF-8
+
+/*.xml
+  Content-Security-Policy: upgrade-insecure-requests; frame-ancestors 'none'; default-src 'none'; img-src 'self' data: https://www.w3.org/2000/svg; style-src 'report-sample' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' 'sha256-p08VBe6m5i8+qtXWjnH/AN3klt1l4uoOLsjNn8BjdQo='; base-uri 'none'; form-action 'none'
+  Content-Type: application/xml; charset=UTF-8
