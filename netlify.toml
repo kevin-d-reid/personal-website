@@ -17,4 +17,4 @@
   force = true
 
 [context.production]
-  command = "npm run build && cp ./custom-headers/_productionHeaders ./dist/_headers"
+  command = "npm run build && cp ./custom-headers/_productionHeaders.txt ./dist/_headers"
