@@ -1,0 +1,17 @@
+[[redirects]]
+  from = "https://kdr-personal-website.netlify.app/*"
+  to = "https://kevindreid.ca/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://kevindreid.com/*"
+  to = "https://kevindreid.ca/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.kevindreid.com/*"
+  to = "https://kevindreid.ca/:splat"
+  status = 301
+  force = true
