@@ -23,3 +23,6 @@
 /*.xml
   Content-Security-Policy: upgrade-insecure-requests; frame-ancestors 'none'; default-src 'none'; img-src 'self' data: https://www.w3.org/2000/svg; style-src 'report-sample' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' 'sha256-p08VBe6m5i8+qtXWjnH/AN3klt1l4uoOLsjNn8BjdQo='; base-uri 'none'; form-action 'none'; report-uri https://xegq7u5s.uriports.com/reports/enforce; report-to default
   Content-Type: application/xml; charset=UTF-8
+
+/*.js
+  Content-Type: text/javascript; charset=UTF-8
